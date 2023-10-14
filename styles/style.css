@@ -73,7 +73,7 @@
 }
 .menu__link--active, .menu__link:hover, .menu__link:focus {
   color: #7e7e82;
-  background: url(/assets/images/highlight.svg) 0px 4px no-repeat;
+  background: url(../assets/images/highlight.svg) 0px 4px no-repeat;
 }
 
 .footer {
