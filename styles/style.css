@@ -1,21 +1,34 @@
 @font-face {
   font-family: "TT Lakes";
   src: url("../assets/fonts/TTLakes-Medium.eot");
-  src: local("../assets/fonts/TT Lakes Medium"), local("../assets/fonts/TTLakes-Medium"), url("../assets/fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/TTLakes-Medium.woff") format("woff"), url("../assets/fonts/TTLakes-Medium.ttf") format("truetype");
+  src: local("../assets/fonts/TT Lakes Medium"),
+    local("../assets/fonts/TTLakes-Medium"),
+    url("../assets/fonts/TTLakes-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/TTLakes-Medium.woff") format("woff"),
+    url("../assets/fonts/TTLakes-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Lakes";
   src: url("../assets/fonts/TTLakes-Bold.eot");
-  src: local("../assets/fonts/TT Lakes Bold"), local("../assets/fonts/TTLakes-Bold"), url("../assets/fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/TTLakes-Bold.woff") format("woff"), url("../assets/fonts/TTLakes-Bold.ttf") format("truetype");
+  src: local("../assets/fonts/TT Lakes Bold"),
+    local("../assets/fonts/TTLakes-Bold"),
+    url("../assets/fonts/TTLakes-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/TTLakes-Bold.woff") format("woff"),
+    url("../assets/fonts/TTLakes-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Lakes";
   src: url("../assets/fonts/TTLakes-DemiBold.eot");
-  src: local("../assets/fonts/TT Lakes DemiBold"), local("../assets/fonts/TTLakes-DemiBold"), url("../assets/fonts/TTLakes-DemiBold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/TTLakes-DemiBold.woff") format("woff"), url("../assets/fonts/TTLakes-DemiBold.ttf") format("truetype");
+  src: local("../assets/fonts/TT Lakes DemiBold"),
+    local("../assets/fonts/TTLakes-DemiBold"),
+    url("../assets/fonts/TTLakes-DemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/TTLakes-DemiBold.woff") format("woff"),
+    url("../assets/fonts/TTLakes-DemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -27,18 +40,14 @@
 }
 
 .container {
-  max-width: 320px;
-  height: 1024px;
-  overflow-x: hidden;
-  background-color: #ffffff;
-  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-}
-
-.content {
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  max-width: 320px;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
 
 .header {
@@ -71,7 +80,9 @@
   line-height: 24px;
   letter-spacing: -0.2px;
 }
-.menu__link--active, .menu__link:hover, .menu__link:focus {
+.menu__link--active,
+.menu__link:hover,
+.menu__link:focus {
   color: #7e7e82;
   background: url(../assets/images/highlight.svg) 0px 4px no-repeat;
 }
@@ -80,6 +91,7 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  margin-top: auto;
 }
 
 .navigation {
@@ -107,7 +119,9 @@
   line-height: 24px;
   letter-spacing: -0.2px;
 }
-.about__link--active, .about__link:hover, .about__link:focus {
+.about__link--active,
+.about__link:hover,
+.about__link:focus {
   color: #7e7e82;
 }
 .about__link--number {
@@ -124,4 +138,4 @@
   margin-bottom: 32px;
   margin-left: 24px;
   gap: 12px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

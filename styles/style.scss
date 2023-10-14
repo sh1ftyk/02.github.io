@@ -67,20 +67,15 @@ $hoverColor: #7e7e82;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     max-width: 320px;
-    height: 1024px;
-    overflow-x: hidden;
+    height: 100vh;
+    overflow-y: scroll;
     background-color: $mainColor;
     box-shadow:
         16px 0px 52px 0px rgba(14, 24, 80, 0.2),
         -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-}
-
-.content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .header {
@@ -121,6 +116,7 @@ $hoverColor: #7e7e82;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+    margin-top: auto;
 }
 
 .navigation {
