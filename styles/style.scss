@@ -138,7 +138,7 @@ $hoverColor: #7e7e82;
     gap: 12px;
     &__link {
         padding: 5px;
-        color: #1b1c21;
+        color: $textColor;
         text-decoration: none;
         font-family: TT Lakes;
         font-size: 16px;
@@ -153,7 +153,7 @@ $hoverColor: #7e7e82;
         color: $hoverColor;
     }
     &__link--number {
-        color: #1b1c21;
+        color: $textColor;
         font-family: TT Lakes;
         font-size: 24px;
         font-style: normal;
