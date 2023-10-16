@@ -78,17 +78,23 @@ $hoverColor: #7e7e82;
     box-shadow:
         16px 0px 52px 0px rgba(14, 24, 80, 0.2),
         -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-}
-
-.header {
-    @include flex;
-    gap: 16px;
-    &__element {
+    &__header {
         margin: {
             top: 19px;
             bottom: 50px;
         }
     }
+    &__menu {
+        margin-bottom: 50px;
+    }
+    &__footer {
+        margin-bottom: 32px;
+    }
+}
+
+.header {
+    @include flex;
+    gap: 16px;
     &__burger {
         margin-left: 24px;
     }
@@ -104,7 +110,6 @@ $hoverColor: #7e7e82;
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 700px;
     gap: 16px;
     &__element {
         list-style: none;
@@ -168,9 +173,6 @@ $hoverColor: #7e7e82;
 
 .language {
     @include flex;
-    &__element {
-        margin-bottom: 32px;
-    }
     &__ru {
         margin-left: 19px;
     }

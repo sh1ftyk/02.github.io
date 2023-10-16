@@ -48,15 +48,21 @@
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
+.container__header {
+  margin-top: 19px;
+  margin-bottom: 50px;
+}
+.container__menu {
+  margin-bottom: 50px;
+}
+.container__footer {
+  margin-bottom: 32px;
+}
 
 .header {
   display: flex;
   align-items: center;
   gap: 16px;
-}
-.header__element {
-  margin-top: 19px;
-  margin-bottom: 50px;
 }
 .header__burger {
   margin-left: 24px;
@@ -70,7 +76,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 700px;
   gap: 16px;
 }
 .menu__element {
@@ -146,9 +151,6 @@
 .language {
   display: flex;
   align-items: center;
-}
-.language__element {
-  margin-bottom: 32px;
 }
 .language__ru {
   margin-left: 19px;
