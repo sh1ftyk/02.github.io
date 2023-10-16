@@ -57,21 +57,23 @@ $hoverColor: #7e7e82;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: TT Lakes;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     max-width: 320px;
-    height: 100vh;
-    overflow-y: scroll;
+    min-height: 100vh;
+    overflow-y: visible;
     background-color: $mainColor;
     box-shadow:
         16px 0px 52px 0px rgba(14, 24, 80, 0.2),
@@ -79,14 +81,22 @@ $hoverColor: #7e7e82;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    margin-top: 19px;
-    margin-bottom: 50px;
-    margin-left: 24px;
+    @include flex;
     gap: 16px;
-    &__logo {
-        margin-right: 62px;
+    &__element {
+        margin: {
+            top: 19px;
+            bottom: 50px;
+        }
+    }
+    &__burger {
+        margin-left: 24px;
+    }
+    &__search {
+        margin: {
+            right: 24px;
+            left: auto;
+        }
     }
 }
 
@@ -94,18 +104,16 @@ $hoverColor: #7e7e82;
     position: relative;
     display: flex;
     flex-direction: column;
+    min-height: 700px;
     gap: 16px;
     &__element {
         list-style: none;
     }
     &__link {
         display: block;
-        @include text;
         padding: 10px 50px 10px 24px;
+        @include text;
         color: $textColor;
-        text-decoration: none;
-        line-height: 24px;
-        letter-spacing: -0.2px;
     }
     &__link--active,
     &__link:hover,
@@ -123,47 +131,60 @@ $hoverColor: #7e7e82;
 }
 
 .navigation {
-    display: flex;
-    margin-left: 24px;
-    margin-bottom: 16px;
+    @include flex;
     gap: 16px;
+    &__element {
+        margin-bottom: 16px;
+    }
+    &__call {
+        margin-left: 24px;
+    }
 }
 
 .about {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
-    margin-left: 24px;
     gap: 12px;
+    &__element {
+        margin-left: 19px;
+    }
+    &__number {
+        margin-bottom: 40px;
+    }
     &__link {
         padding: 5px;
+        @include text;
         color: $textColor;
-        text-decoration: none;
-        font-family: TT Lakes;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-    }
-    &__link--active,
-    &__link:hover,
-    &__link:focus {
-        color: $hoverColor;
     }
     &__link--number {
-        color: $textColor;
-        font-family: TT Lakes;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
+        font: {
+            size: 24px;
+            weight: 700;
+        }
         line-height: 32px;
         letter-spacing: -0.6px;
     }
-    &__language {
-        display: flex;
+}
+
+.language {
+    @include flex;
+    &__element {
         margin-bottom: 32px;
-        margin-left: 24px;
-        gap: 12px;
+    }
+    &__ru {
+        margin-left: 19px;
+    }
+    &__btn {
+        padding: 5px;
+        @include text;
+        color: $textColor;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    &__btn--active,
+    &__btn:hover,
+    &__btn:focus {
+        color: $hoverColor;
     }
 }
